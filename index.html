@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de datos de alumnos</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <table class="table-students">
+        <caption>
+            Alumnos
+        </caption>
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Edad</th>
+                <th>Materias Inscritas</th>
+                <th>Calificaciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <tr id="1" class="student1">
+                <td class="name"></td>
+                <td class="last"></td>
+                <td class="age"></td>
+                <td class="matters"></td>
+                <td class="scores"></td>
+            </tr> -->
+        </tbody>
+    </table>
+
+    <form onsubmit="addStudent(event)">
+        <section class="group">
+            <input type="text" id="name" placeholder="Nombres" />
+            <input type="text" id="lastname" placeholder="Apellidos" />
+            <input type="text" id="age" placeholder="Edad" />
+            <input type="text" id="matters" placeholder="Materias" />
+            <input type="text" id="scores" placeholder="Clasificaciones" />
+        </section>
+        <button type="submit">Agregar</button>
+    </form>
+
+    <script src="./main.js"></script>
+</body>
+</html>
